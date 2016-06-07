@@ -1,0 +1,11 @@
+---
+applications:
+- name: camel-demo
+  memory: 512MB
+  instances: 1
+  path: target/demo-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack_offline
+  env:
+    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
+  
+ 
